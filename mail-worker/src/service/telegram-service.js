@@ -80,6 +80,7 @@ const telegramService = {
 					body: JSON.stringify({
 						chat_id: chatId,
 						parse_mode: 'HTML',
+						link_preview_options: { is_disabled: true },
 						text: emailMsgTemplate(email, tgMsgTo, tgMsgFrom, tgMsgText),
 						reply_markup: {
 							inline_keyboard: inlineKeyboard
